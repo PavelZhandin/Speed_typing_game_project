@@ -11,6 +11,10 @@ module.exports = {
         test: /.hbs$/,
         use: ["handlebars-loader"],
       },
+      {
+        test: /.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
     ],
   },
   resolve: {
